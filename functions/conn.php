@@ -2,17 +2,10 @@
 
 // InformaÃ§Ãµes para conexÃ£o LOCAL
 
-/*$host = 'localhost';
-$usuario = 'dblog';
-$senha = 'dblog';
-$banco = 'taxiweb';  */
-
-//conexÃ£o remota ao banco de dados
-$host = 'sql206.main-hosting.eu';
-$usuario = 'u309778760_gcoop';
-$senha = 'G.coop*2018';
-$banco = 'u309778760_gcoop'; 
-
+$host = 'localhost';
+$usuario = 'dbuser';
+$senha = 'dbuser';
+$banco = 'db_pa7'; 
 
 $dsn = "mysql:host=$host;port=3306;dbname=$banco;charset=utf8";
 $mysqli=new mysqli($host,$usuario,$senha,$banco);

@@ -14,12 +14,12 @@ $sql->execute();
 $sql->bind_result($idsenha,$senha,$dthrid,$sit);
         
         echo '
-            <h4 class="bg-warning text-white text-center btn-primary mt-1"><b>Últimas Senhas:</b></h4>
+            <h5 class="bg-warning text-white text-center btn-primary mt-1"><b>Últimas Senhas:</b></h5>
             <table class="table table-striped table-bordered">
               <thead>
                 <tr>
-                  <th class="text-center text-white bg-dark" style="font-size: 15px">DATA/HORA</th>
-                  <th class="text-center text-white bg-dark" style="font-size: 15px">SENHA</th>                  
+                  <th class="text-center text-white bg-dark" style="font-size: 10px">DATA/HORA</th>
+                  <th class="text-center text-white bg-dark" style="font-size: 10px">SENHA</th>                  
                 </tr>
               </thead>
               <tbody> ';
@@ -30,8 +30,8 @@ $sql->bind_result($idsenha,$senha,$dthrid,$sit);
                 $hora = substr($dthrid,8,11);
                 echo '
                 <tr>
-                  <td class="text-center text-dark" style="font-size: 18px;font-weight: 300">'.$dia.'/'.$mes.'/'.$ano.'  '.$hora.'</td>                  
-                  <td class="text-center text-dark" style="font-size: 18px;font-weight: 900">'.str_pad($senha,3,"0",STR_PAD_LEFT).'</td>
+                  <th class="text-center text-dark" style="font-size: 10px;font-weight: 500">'.$dia.'/'.$mes.'/'.$ano.'  '.$hora.'</th>                  
+                  <td class="text-center text-dark" style="font-size: 10px">'.$senha.'</td>
                 </tr>'; }
                 '               
               </tbody>

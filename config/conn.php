@@ -1,13 +1,19 @@
 <?php
 
 // Informações para conexão
-$host = 'mysql.hostinger.com.br';
-$usuario = 'u309778760_gcoop';
-$senha = 'G.coop*2018';
-$banco = 'u309778760_gcoop';
+$host = 'localhost';
+$usuario = 'root';
+$senha = '';
+$banco = 'db_pa7';
 $dsn = "mysql:host=$host;port=3306;dbname=$banco;charset=utf8";
 
-$mysqli=new mysqli($host,$usuario,$senha,$banco);
+
+	$mysqli=new mysqli($host,$usuario,$senha,$banco);
+	$mysqli1=new mysqli($host,$usuario,$senha,$banco);
+	$escolhe=new mysqli($host,$usuario,$senha,$banco);
+
+	//$mysqli2=new mysqli($host,$usuario,$senha,$banco);
+
 
 try
 {
