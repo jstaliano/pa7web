@@ -4,3 +4,5 @@ Este site é utilizado pelos motoristas para se materem atualuizados da sua posi
 ajax e atualizadas automaticamente.
 Na Aba Senha online, usamos apenas ajax para obter os dados do MySql usando um script PHP. Já na aba PA8 consumimos um WS para obter uma relação de veículos anotados
 através da biblioteca CURL do PHP.
+Também está nestes arquivos um script que permite o operacional da empresa, realizar o processo de fechamento de senhas que acontece todos os dias à meia-noite.
+
